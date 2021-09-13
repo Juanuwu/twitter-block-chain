@@ -213,7 +213,7 @@ class MobileTwitter {
                 .then(_getUserData)
                 .then(_processData)
                 .then(() => {
-                    if (cursor && usersFound < 16000) _recursiveCall();
+                    if (cursor && usersFound < 10000) _recursiveCall();
                     else {
                         finderRunning = false;
                     }
