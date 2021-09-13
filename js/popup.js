@@ -67,8 +67,7 @@ function runBlockchain(type) {
 }
 document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('runBlockchain').addEventListener("click", function() { runBlockchain('block'); } );
-  document.getElementById('runExportchain').addEventListener("click", function() { runBlockchain('export'); });
-  document.getElementById('runImportchain').addEventListener("click", function() { runBlockchain('import'); });
+
   getCurrentTabUrl(function(url) {
     browser.storage.local.set({removeImageBlock: Math.random()});
     if (url.indexOf("https://twitter.com") > -1 || url.indexOf("https://mobile.twitter.com") > -1) {
