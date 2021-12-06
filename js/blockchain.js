@@ -104,7 +104,7 @@ class MobileTwitter {
         let cursor = null;
         const _getIDData = () => {
             if (!finderRunning) return false;
-            const count = 2000;
+            const count = 5000;
             let url = `${requestType}/ids.json?screen_name=${profileUsername}&count=${count}&stringify_ids=true`
             if (cursor) url += `&cursor=${cursor}`
             lastRequestTime = Date.now();
